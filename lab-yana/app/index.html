@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="mooApp">
+  <head></head>
+  <body>
+    <main>
+      <section class="container" ng-controller="MooController">
+        <h2>{{mooCtrl.title}}</h2>
+        <br>
+        <pre class="cow">{{ mooCtrl.speak(mooCtrl.text) }}</pre>
+        <br>
+        <input type="text" ng-model="mooCtrl.text">
+      </section>
+    </main>
+  </body>
+</html>
